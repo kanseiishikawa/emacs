@@ -1,0 +1,1 @@
+etags ~/soccer/ri-one2019_soccer/src/*.h ~/soccer/ri-one2019_soccer/src/*.cpp ~/soccer/ri-one2019_soccer/src/*cpp ~/soccer/ri-one2019_soccer/src//chain_action/*.h ~/soccer/ri-one2019_soccer/src//chain_action/*.cpp ~/soccer/librcsc-4.1.0/rcsc/player/*.h ~/soccer/librcsc-4.1.0/rcsc/player/*.cpp ~/soccer/librcsc-4.1.0/rcsc/common/*.h ~/soccer/librcsc-4.1.0/rcsc/common/*.cpp
