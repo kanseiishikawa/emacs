@@ -215,7 +215,7 @@
  '(ahs-default-range (quote ahs-range-whole-buffer))
  '(package-selected-packages
    (quote
-    (rainbow-delimiters racer quickrun rust-mode yatex go-autocomplete company-go go-mode yasnippet company-irony-c-headers atom-dark-theme company-irony jedi python-mode neotree multi-term company auto-highlight-symbol auto-complete))))
+    (web-mode rainbow-delimiters racer quickrun rust-mode yatex go-autocomplete company-go go-mode yasnippet company-irony-c-headers atom-dark-theme company-irony jedi python-mode neotree multi-term company auto-highlight-symbol auto-complete))))
 
 (add-hook 'c-mode-hook
 	  (lambda ()
