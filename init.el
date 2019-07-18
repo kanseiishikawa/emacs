@@ -18,6 +18,12 @@
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
+;;定義ジャンプ
+(setq dumb-jump-mode t)
+
+;;検索の手助け
+(ivy-mode 1)
+
 ;; 括弧の色を強調する設定
 (require 'cl-lib)
 (require 'color)
@@ -193,7 +199,7 @@
 (setq tags-table-list '("~/.emacs.d/soccer_tag"))
 ;;定義ジャンプのショートカットキー
 (define-key global-map "\C-d" 'grep-find)
-(define-key global-map "\C-w" 'xref-find-definitions)
+(define-key global-map "\C-w" 'dumb-jump-go)
 (define-key global-map "\C-t" 'pop-tag-mark)
 (define-key global-map "\C-f" 'find-file)
 (define-key global-map "\C-u" 'goto-line)
@@ -203,6 +209,7 @@
 (define-key global-map "\C-q" 'scroll-down)
 ;;(define-key global-map "\C-m" 'comment-or-uncomment-region)
 (global-set-key (kbd "\C-z")   'advertised-undo)
+(global-set-key (kbd "\C-s")   'swiper)
 
 ;;指定文字のハイライト
 (require 'auto-highlight-symbol)
@@ -215,7 +222,7 @@
  '(ahs-default-range (quote ahs-range-whole-buffer))
  '(package-selected-packages
    (quote
-    (web-mode rainbow-delimiters racer quickrun rust-mode yatex go-autocomplete company-go go-mode yasnippet company-irony-c-headers atom-dark-theme company-irony jedi python-mode neotree multi-term company auto-highlight-symbol auto-complete))))
+    (swiper ivy dumb-jump web-mode rainbow-delimiters racer quickrun rust-mode yatex go-autocomplete company-go go-mode yasnippet company-irony-c-headers atom-dark-theme company-irony jedi python-mode neotree multi-term company auto-highlight-symbol auto-complete))))
 
 (add-hook 'c-mode-hook
 	  (lambda ()
